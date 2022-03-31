@@ -1,0 +1,77 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.cd-logo, .kitchen-equipment, .ingredients, .method, .finish {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: grey;
+  background-size: cover;
+  
+  min-height: 50%;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+
+.cd-logo {
+  background-image: url("https://www.biggerbolderbaking.com/wp-content/uploads/2019/12/Macaron-Mistakes-WS-Thumbnail.jpg");
+  min-height: 100%;
+  background-size: auto;
+}
+
+.caption{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.border{
+  background-color: pink;
+  color: grey;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.kitchen-equipment{
+  background-image: url("https://cdn.sallysbakingaddiction.com/wp-content/uploads/2021/02/ingredients-in-french-macarons-500x333.jpg");
+}
+
+.ingredients{
+  background-image: url("https://cakejournal.com/wp-content/uploads/2011/02/1.jpg");
+}
+
+.method{
+  background-image: url("https://www.bakedbyanintrovert.com/wp-content/uploads/2016/03/French-Macarons-Process-4.jpg");
+}
+
+.finish{
+  background-image: url("https://entertainingwithbeth.com/wp-content/uploads/2013/02/French-Macaron-Recipe_1.jpg");
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align:center
+}
+
+.textSection {
+  background-color: pink;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+/* Turn off parallax scrolling for tablets and phones as it is not supported */
+@media only screen and (max-device-width: 1024px) {
+  .cd-logo, .kitchen-equipment, .ingredients, .method, .finish {
+        background-attachment: scroll;
+    }
+}
